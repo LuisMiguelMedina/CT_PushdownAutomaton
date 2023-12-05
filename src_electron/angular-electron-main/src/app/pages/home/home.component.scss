@@ -1,0 +1,212 @@
+:host {
+  display: contents;
+}
+
+.home-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-section1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-tripleunit);
+  padding-left: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-doubleunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fiveunits);
+}
+
+.home-container1 {
+  width: auto;
+  display: flex;
+  max-width: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-header {
+  width: 721px;
+  height: 66px;
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  margin-bottom: 0px;
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+
+.home-text {
+  color: var(--dl-color-secondary-400);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-doubleunit);
+}
+
+.home-body-container {
+  width: 1093px;
+  height: 432px;
+  display: flex;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-halfunit);
+  flex-direction: row;
+}
+
+.home-automaton-box {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+
+.home-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.home-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.home-input-container {
+  flex: 1;
+  width: 421px;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.home-input-name {
+  color: var(--dl-color-secondary-400);
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+
+.home-input-box {
+  flex: 1;
+  width: auto;
+  height: auto;
+  color: var(--dl-color-secondary-400);
+  margin-top: var(--dl-space-space-triplequarter);
+  margin-left: var(--dl-space-space-halfunit);
+}
+
+.home-input-box::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.home-icon {
+  width: auto;
+  height: auto;
+  fill: var(--dl-color-secondary-400);
+  margin-top: var(--dl-space-space-halfunit);
+}
+
+.home-icon2 {
+  width: auto;
+  height: 2rem;
+  fill: var(--dl-color-secondary-400);
+  margin-top: var(--dl-space-space-triplequarter);
+  margin-left: var(--dl-space-space-halfunit);
+}
+
+.home-textarea {
+  color: transparent;
+  width: 423px;
+  height: 306px;
+  background-color: transparent;
+}
+
+.home-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container5 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-diagram-box {
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: var(--dl-radius-radius-radius50);
+  flex-direction: column;
+  background-color: var(--dl-color-secondary-100);
+}
+
+.home-diagram-header {
+  height: 62px;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  position: relative;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.home-text1 {
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.home-text2 {
+  color: #f2f5f9;
+}
+
+.home-image {
+  width: 600px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 200px;
+  object-fit: cover;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  border-radius: 0px;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+  object-position: center;
+  border-top-left-radius: var(--dl-radius-radius-radius50);
+  border-top-right-radius: var(--dl-radius-radius-radius50);
+}

@@ -12,10 +12,10 @@
       ],
       "parserOptions": {
         "project": [
-          "./tsconfig.serve.json",
-          "./src/tsconfig.app.json",
-          "./src/tsconfig.spec.json",
-          "./e2e/tsconfig.e2e.json"
+          "./src_electron/angular-electron-main/tsconfig.serve.json",
+          "./src_electron/angular-electron-main/src/tsconfig.app.json",
+          "./src_electron/angular-electron-main/src/tsconfig.spec.json",
+          "./src_electron/angular-electron-main/e2e/tsconfig.e2e.json"
         ],
         "createDefaultProgram": true
       },

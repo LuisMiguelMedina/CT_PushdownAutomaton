@@ -11,8 +11,15 @@ t_ignore = " \t"
 
 
 def t_error(t):
-    print(f"Illegal character '{t.value[0]}'")
+    if not hasattr(t.lexer, 'illegal_characters'):
+        t.lexer.illegal_characters = []
+    t.lexer.illegal_characters.append(t.value[0])
     t.lexer.skip(1)
 
 
 lexer = lex.lex()
+
+
+def begin_lexing(string):
+    lexer.input(string)
+    lexer.illegal_characters = []

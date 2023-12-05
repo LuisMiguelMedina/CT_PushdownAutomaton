@@ -1,4 +1,4 @@
-from pda.stack import Stack
+from ..pda.stack import Stack
 
 PDAstack = Stack()
 
