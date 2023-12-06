@@ -1,7 +1,7 @@
 import unittest
-from ..pda.palindrome import PalindromePDA
-from ..pda.Simulator import input_string
-from ..lexer.lexer import lexer
+from pda.palindrome import PalindromePDA
+from pda.Simulator import input_string
+from lexer.lexer import lexer
 
 class Token:
     def __init__(self, t_type):

@@ -1,5 +1,5 @@
-from .palindrome import PalindromePDA
-from ..lexer.lexer import begin_lexing
+from pda.palindrome import PalindromePDA
+from lexer.lexer import begin_lexing
 
 def input_string(lexer, string):
     begin_lexing(string)

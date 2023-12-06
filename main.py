@@ -1,4 +1,4 @@
-from .pda.Simulator import simulate_pda
+from pda.Simulator import simulate_pda
 from lexer.lexer import lexer
 
 # main.py
