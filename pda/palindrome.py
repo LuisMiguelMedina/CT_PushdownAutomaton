@@ -1,20 +1,28 @@
+# palindrome.py
 from pda.stack import Stack
-
-PDAstack = Stack()
 
 class PalindromePDA:
     def __init__(self):
-        self.stack = PDAstack
+        self.stack = Stack()
+        self.current_state = 's'
 
-    def process_tokens(self, tokens):
-        for index, token in enumerate(tokens):
-            if index < len(tokens) / 2:
-                self.stack.push(token.type)
-            else:
-                # En la segunda mitad, cada token debe coincidir con el tope de la pila
-                if self.stack.is_empty() or self.stack.peek() != token.type:
-                    return False
+    def process_token(self, token, index, total_length):
+        half_length = total_length // 2
+
+        if index < half_length:
+            self.stack.push(token)
+        elif index >= half_length:
+            if not self.stack.is_empty() and self.stack.peek() == token:
                 self.stack.pop()
+            else:
+                self.current_state = 's'
+                return
 
-        # La cadena es un palíndromo si la pila está vacía al final
-        return self.stack.is_empty()
+        if index == total_length - 1 and self.stack.is_empty():
+            self.current_state = 'f'
+
+    def get_current_state(self):
+        return self.current_state
+
+    def get_stack_contents(self):
+        return ''.join(self.stack.items)
