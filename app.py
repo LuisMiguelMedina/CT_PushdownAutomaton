@@ -1,10 +1,13 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from pda.palindrome import PalindromePDA
 from lexer.lexer import begin_lexing
+
 import os
 import signal
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/simulate', methods=['POST'])
 def simulate_pda_api():
@@ -35,8 +38,6 @@ def simulate_pda_api():
 
     return jsonify(response)
 
-    return jsonify(response)
-
 @app.errorhandler(Exception)
 def handle_error(e):
     return jsonify(error=str(e)), 500
@@ -48,4 +49,5 @@ def shutdown():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='127.0.0.1', port=5000, debug=False)
+
